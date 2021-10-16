@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Fade</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeToggle("slow");
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(2000);
+            });
+        });
+    </script>
+    <style>
+        body {
+  background: #fbf2f5;}
+  h2{
+      color: rgb(8, 3, 3);
+  }
+  button{
+      color: rgb(133, 54, 87);
+  }
+     .img-categori {
+            width: 180px;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pilihan Diskon Tersedia</h2>
+
+    <button>Click to fade in/out boxes</button><br><br>
+
+    <div id="div1">
+    <a href="#"><img
+            src="https://s4.bukalapak.com/rev-banner/flash_banner/860652341/s-264-264/mobile_DiskonPPKM_eced8f68-b4b1-4dd8-b51d-12627e22a4dc.jpeg"
+            alt="Diskon PPKM" class="img-categori mt-lg-3"></a></div>
+    <br>
+    <div id="div2">
+         <a href="#"><img
+            src="https://s4.bukalapak.com/rev-banner/flash_banner/585356984/s-264-264/mobile_MurahMantap_8bbb144e-9121-4802-9fcf-9a60f44add3c.jpeg"
+            alt="Murah Mantap" class="img-categori rounder mt-lg-3"></a></div>
+    <br>
+    <div id="div3">
+         <a href="#"><img
+            src="https://s4.bukalapak.com/rev-banner/flash_banner/958633355/s-264-264/mobile_ElektrophoneSale_cf1b3137-cb11-4190-870b-6ade5803dac8.jpeg"
+            alt="Elektrophone Sale" class="img-categori mt-lg-3"></a></div>
+
+
+</body>
+
+</html>
